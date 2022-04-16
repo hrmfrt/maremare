@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label :"分類1 名称" %>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :picture %>
-    <%= form.text_field :picture %>
+    <%= form.label :順番 %>
+    <%= form.number_field :order %>
   </div>
 
   <div class="field">
-    <%= form.label :order %>
-    <%= form.number_field :order %>
+    <%= form.label :ボタン用写真 %>
+    <%= form.file_field :picture %>
   </div>
 
   <div class="actions">

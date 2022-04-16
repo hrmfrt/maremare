@@ -8,6 +8,7 @@
 <p>
   <strong>Picture:</strong>
   <%= @category.picture %>
+   <%= image_tag(@category.picture_url) if @category.picture.present? %>
 </p>
 
 <p>
