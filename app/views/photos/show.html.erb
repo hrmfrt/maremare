@@ -2,7 +2,7 @@
 
 <p>
   <strong>Photo:</strong>
-  <%= @photo.pictures %>
+  <%= @photo.id %>
 </p>
 
 <p>
@@ -12,8 +12,8 @@
 
 <p>
   <strong>Picture:</strong>
-  <% @photo.pictures do |pict| %>
-  <%= image_tag pict.name %>
+  <% @photo.photo_num do |pict| %>
+  <%= image_tag pict %>
   <% end%>
 </p>
 
